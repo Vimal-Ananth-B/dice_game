@@ -1,97 +1,222 @@
-body {
-    font-family: 'Comic Sans MS', sans-serif;
-    background: linear-gradient(125deg, #f60100, #002540, #000000, #0070f7, #f60100);
-    background-size: 300% 300%;
-    animation: gradientBackground 6s ease infinite;
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    /* body {
+        font-family: 'Comic Sans MS', sans-serif;
+        background: linear-gradient(125deg, #f60100, #002540, #000000, #0070f7, #f60100);
+        background-size: 300% 300%;
+        animation: gradientBackground 6s ease infinite;
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-@keyframes gradientBackground {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+    @keyframes gradientBackground {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px #f60100;
-}
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px #f60100;
+    }
 
-input {
-    padding: 15px;
-    font-size: 1.5rem;
-    border: 2px solid #f60100;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    width: 60%;
-    max-width: 300px;
-    color: #f60100;
-    text-align: center;
-}
+    input {
+        padding: 15px;
+        font-size: 1.5rem;
+        border: 2px solid #f60100;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 60%;
+        max-width: 300px;
+        color: #f60100;
+        text-align: center;
+    }
 
-input::placeholder {
-    color: #f60100;
-}
+    input::placeholder {
+        color: #f60100;
+    }
 
-button {
-    background-color: #f60100;
-    color: #ffffff;
-    padding: 15px 30px;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 15px rgba(255, 64, 129, 0.5);
-    margin-bottom: 20px;
-}
+    button {
+        background-color: #f60100;
+        color: #ffffff;
+        padding: 15px 30px;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 15px rgba(255, 64, 129, 0.5);
+        margin-bottom: 20px;
+    }
 
-button:hover {
-    background-color: #f60100;
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 20px white;
-}
+    button:hover {
+        background-color: #f60100;
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 20px white;
+    }
 
-p {
-    font-size: 1.5rem;
-    text-shadow: 1px 1px #333;
-}
+    p {
+        font-size: 1.5rem;
+        text-shadow: 1px 1px #333;
+    }
 
-#p1 {
-    margin-top: 20px;
-    font-weight: bold;
-}
+    #p1 {
+        margin-top: 20px;
+        font-weight: bold;
+    }
 
-#number {
-    font-size: 2rem;
-    color: #ffe066;
-    margin-top: 20px;
-    text-shadow: 2px 2px #333;
-}
+    #number {
+        font-size: 2rem;
+        color: #ffe066;
+        margin-top: 20px;
+        text-shadow: 2px 2px #333;
+    }
 
-#luck {
-    font-size: 3rem;
-    color: lightblue;
-    margin-top: 20px;
-    text-shadow: 2px 2px #333;
-}
+    #luck {
+        font-size: 4rem;
+        color: lightblue;
+        margin-top: 20px;
+        text-shadow: 2px 2px #333;
+    }
 
-/* Add container style for neatness */
-.game-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-}
+    /* Add container style for neatness 
+    .game-container {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    } */
+
+    /* General body styling */
+    body {
+        background: linear-gradient(125deg, #ff6f61, #4e6474, rgb(90, 90, 76), #0070f7, #ff6f61);
+        background-size: 300% 300%;
+        animation: gradientBackground 6s ease infinite;
+        /* background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); Gradient background */
+        font-family: 'Poppins', sans-serif; /* Modern, clean font */
+        text-align: center;
+        padding: 50px; /* Animate background gradient */
+    }
+    
+    /* Animate the background gradient */
+    @keyframes gradientBackground {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    /* Title styling */
+    h1 {
+        font-size: 3em;
+        color: #ffffff; /* White color */
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Soft shadow */
+        animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+    }
+    
+    /* Input styling */
+    input {
+        font-size: 1.5em;
+        padding: 15px;
+        width: 250px;
+        border: 3px solid #ff6f61; /* Coral border */
+        border-radius: 20px; /* Rounded edges */
+        background-color: #ffffff; /* White background */
+        color: #333; /* Dark text */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow */
+        transition: all 0.3s ease; /* Smooth transition */
+    }
+    
+    /* Focus effect for input */
+    input:focus {
+        border-color: #ff6f61; /* Coral border on focus */
+        transform: scale(1.05); /* Slight zoom on focus */
+        outline: none;
+    }
+    
+    /* Button styling */
+    button {
+        font-size: 1.5em;
+        padding: 15px 30px;
+        margin-top: 20px;
+        background-color: #4facfe; /* Bright blue */
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow */
+        transition: all 0.4s ease;
+        animation: pulse 2s infinite; /* Subtle pulsing animation */
+    }
+    
+    /* Button hover effect */
+    button:hover {
+        background-color: #00f2fe; /* Cyan on hover */
+        transform: translateY(-5px); /* Move upwards on hover */
+    }
+    
+    /* Button click effect */
+    button:active {
+        transform: translateY(0); /* Reset position on click */
+        background-color: #3a86ff; /* Slightly darker blue on click */
+    }
+    
+    /* Paragraph styling */
+    p {
+        font-size: 1.4em;
+        color: #2f4858; /* Deep teal */
+        margin-top: 30px;
+    }
+    
+    /* Game score and tries paragraph */
+    #number, #luck {
+        font-size: 1.6em;
+        font-weight: bold;
+        color: #fff; /* White text */
+        background-color: #ff6f61; /* Coral background */
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 25px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        animation: bounce 2s infinite; /* Bounce animation */
+    }
+    
+    /* Styling for the result message */
+    #p1 {
+        font-size: 1.6em;
+        font-weight: bold;
+        color: #4facfe; /* Bright blue text */
+        margin-top: 20px;
+        animation: fadeInUp 1.5s ease; /* Fade-in from bottom */
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    
+    @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+    
